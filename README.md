@@ -1,6 +1,8 @@
 # Job Description Keyword Parser
 Explore more of my work at [RKSEO.xyz](https://rkseo.xyz)
 
+_I need to adapt this to analhyzing semantics across competition articles for content optimization..._
+
 As it turns out, keywords in resumes are just as relevant as they may be in search engines. 
 
 Applicant Tracking Systems will typically count keywords found in a resume as a way to rank them, or help HR sift through large stacks of applicants. Often these keywords will come from the job description, resumes from other applicants that are a good fit, and HR's own keyword entries. 
@@ -17,8 +19,12 @@ I've decided to determine "relevance" from a batch of data with 3 different tech
 2. Total count of keywords across the data
 3. My own eye as to what I feel is most relevant of the previous two outputs.
 
-I'd started by using Google's BERT (I am an SEO after all) but ended up moving to XLNet due to better performance / just overall more modern and improved technology. 
+I'd started by using Google's BERT (I am an SEO after all) but ended up moving to XLNet due to better performance & just overall more modern and improved technology. 
 
 ## Google Colab Docs
 - [Bulk Job Description Parser](https://colab.research.google.com/drive/1zKRsSsZKFX4nfdyf4KtQQP_Z7lp3ixMY?usp=sharing)
 - [Single Job Description Parser](https://colab.research.google.com/drive/1HSxDGj16Kn1hdpmwEef-dNGY9lscLQqx?usp=sharing)
+
+## Sample Data
+- [Bulk Analysis Across 30 SEO Based Job Descriptions (Excel Sheet)](https://github.com/krutzar/job-description-keyword-parser/blob/main/Sample%20Data_%20SEO%20Job%20Descriptions.xlsx)
+- [Single Description vs My Resume (Excel Sheet)](https://github.com/krutzar/job-description-keyword-parser/blob/main/Sample%20job_description_resume_analysis.xlsx)
