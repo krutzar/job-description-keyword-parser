@@ -1,70 +1,38 @@
 # -*- coding: utf-8 -*-
 """
+Here's a concise header summary for the provided code:
+
 # Job Description and Resume Analyzer
 
-## Overview
+A Python program that analyzes job descriptions and compares them with resumes to identify important keywords and potential gaps.
 
-This program analyzes a job description and compares it with your resume to help you identify important keywords and potential gaps in your resume. It uses natural language processing techniques to extract and rank keywords, and then checks if these keywords are present in your resume.
+## Main Functions:
+1. Analyzes job descriptions using semantic analysis and word count
+2. Extracts keywords and phrases from the job description
+3. Compares extracted keywords with resume content
+4. Generates a report of matching and missing keywords
 
-## How It Works
+## Key Features:
+- Uses natural language processing and BERT embeddings for semantic analysis
+- Performs fuzzy matching to account for word variations
+- Handles hyphenated words and their non-hyphenated variants
+- Normalizes words to account for plurals and common tenses
+- Exports detailed results to an Excel file
 
-1. **Job Description Analysis**:
-   - Extracts keywords using semantic analysis (based on word embeddings)
-   - Performs a word count analysis
+## Dependencies:
+- sentence_transformers
+- PyPDF2
+- fuzzywuzzy
+- NLTK
+- pandas
+- torch
 
-2. **Resume Analysis**:
-   - Reads your resume (PDF format)
-   - Compares the extracted job description keywords with your resume content
+## Input/Output:
+- Input: Job description (text), Resume (PDF file)
+- Output: Console display of top keywords and missing words, Excel report
 
-3. **Matching Process**:
-   - Uses fuzzy matching to account for slight variations in spelling and word forms
-   - Handles hyphenated words and their non-hyphenated variants
-   - Normalizes words to account for plurals and some common tenses
-
-4. **Output**:
-   - Displays top 50 keywords (semantic score and word count) with indicators for presence in resume
-   - Shows lists of keywords missing from your resume
-   - Exports detailed results to an Excel file
-
-## How to Use
-
-1. **Setup**:
-   - Ensure your resume is saved as 'resume.pdf' in the same directory as this notebook.
-   - Replace the placeholder text in the `job_description` variable with the actual job description you want to analyze.
-
-2. **Run the Program**:
-   - Execute all cells in the notebook.
-
-3. **Review Results**:
-   - Console output will show:
-     - Top 50 keywords (semantic score) with resume match indicators
-     - Top 50 words (count) with resume match indicators
-     - List of missing keywords (semantic score)
-     - List of missing words (count)
-   - Check the generated Excel file for detailed results
-
-## File Naming
-
-- **Input**:
-  - Job Description: Entered directly into the `job_description` variable in the code
-  - Resume: Should be named 'resume.pdf' and placed in the same directory as the notebook
-
-- **Output**:
-  - Excel File: 'job_description_resume_analysis.xlsx'
-    - Contains sheets for Semantic Analysis, Word Count, Missing Keywords, and Missing Words
-
-## Important Notes
-
-- The program uses the 'sentence-transformers/all-MiniLM-L6-v2' model for semantic analysis.
-- Fuzzy matching is used with a threshold of 80% similarity to catch variations in words.
-- The Excel file provides a comprehensive view of all analyzed data for further review and action.
-
-## Customization
-
-You can modify the following parameters in the code:
-- `MODEL_NAME`: Change the semantic analysis model
-- Fuzzy matching threshold in the `fuzzy_match` function
-- Number of top keywords displayed (default is 50)
+## Note:
+This program is designed to assist job seekers in tailoring their resumes to specific job descriptions by identifying key terms and potential areas for improvement.
 """
 
 job_description = "placeholder, paste job descriptoin here..."
