@@ -1,7 +1,7 @@
 # Job Description Keyword Parser
 Explore more of my work at [RKSEO.xyz](https://rkseo.xyz)
 
-_I need to adapt this to analhyzing semantics across competition articles for content optimization..._
+(_Note to self: I need to adapt this to analyzing semantics across competition articles for content optimization..._)
 
 As it turns out, keywords in resumes are just as relevant as they may be in search engines. 
 
