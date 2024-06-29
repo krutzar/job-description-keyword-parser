@@ -1,4 +1,6 @@
 # Job Description Keyword Parser
+Explore more of my work at [RKSEO.xyz](https://rkseo.xyz)
+
 As it turns out, keywords in resumes are just as relevant as they may be in search engines. 
 
 Applicant Tracking Systems will typically count keywords found in a resume as a way to rank them, or help HR sift through large stacks of applicants. Often these keywords will come from the job description, resumes from other applicants that are a good fit, and HR's own keyword entries. 
